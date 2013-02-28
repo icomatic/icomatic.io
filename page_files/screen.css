@@ -222,8 +222,6 @@ header h2 a:hover, header h2 a:focus {
 	text-decoration:none;
 }
 
-
-
 header h2 a:active {
 	top: -2px;
 }
@@ -288,14 +286,9 @@ header h2 a:active {
 #subheader {
 	color: #333;
 	text-shadow: 0 1px 2px rgba(0,0,0,.35);
-<<<<<<< HEAD
 	padding: 50px 2em 60px 2em;
-
 	background-color: #262626;
-=======
-	padding: 50px 0 60px 0;
 	background-color: #fff;
->>>>>>> design changes
 	position: relative;
 	-webkit-font-smoothing: antialiased;
 }
@@ -414,8 +407,6 @@ header h2 a:active {
 	float: left;
 }
 
-
-
 #subheader .row .logoContainer{
 		float: left;
 		height: auto;
@@ -423,15 +414,11 @@ header h2 a:active {
 		width: auto;
 }
 
-
 #subheader .row .logo_img{
 		width: auto;
 		max-width: 50%;
 		height: auto;
 		margin: 0 auto;
-    
-        
-	
 }
 
 #subheader .row .logo_headline{
@@ -444,11 +431,7 @@ header h2 a:active {
 		margin: 0 auto;
 }
 
-
-  
-	
 /* Features -------------------------------------------------------------------- */
-
 
 .feature {
 	padding-top: 1em;
@@ -463,7 +446,6 @@ header h2 a:active {
 
 }
 
-
 .feature_blue {
 	padding-top: 4em;
 	padding-left: 32px;
@@ -475,7 +457,6 @@ header h2 a:active {
 
 }
 
-
 .feature_gray {
 	padding-top: 4em;
 	padding-left: 32px;
@@ -485,7 +466,6 @@ header h2 a:active {
 	border-bottom: 1px solid #eee;
 	margin-bottom:60px;
 }
-
 
 .feature_red {
 	padding-top: 4em;
@@ -507,7 +487,6 @@ header h2 a:active {
 	margin-bottom:60px;
 }
 
-
 .feature_yellow {
 	padding-top: 4em;
 	padding-left: 32px;
@@ -517,7 +496,6 @@ header h2 a:active {
 	border-bottom: 1px solid #eee;
 	margin-bottom:60px;
 }
-
 
 .feature .row {
 	vertical-align: bottom;
@@ -1375,8 +1353,4 @@ img {
 	.r-table td:first-child img {
 		display: block !important;
 	}
-}
-
-colored_row{
-    
 }
