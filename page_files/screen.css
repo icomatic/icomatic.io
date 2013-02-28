@@ -593,7 +593,6 @@ header h2 a:active {
 	text-align: center;
 	background-color: #fff;
 	border-bottom: 1px solid #eaeaea;
-	/*box-shadow: 0 0 10px #ddd;*/
 	position: relative;
 	z-index: 1;
 }
@@ -602,6 +601,7 @@ header h2 a:active {
 	top: 0;
 	left: 0;
 	right: 0;
+	background: url(images/icomatic_logo.svg) no-repeat, white;
 }
 .topcalltoaction h4 {
 	margin: 0;
