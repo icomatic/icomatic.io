@@ -286,7 +286,8 @@ header h2 a:active {
 #subheader {
 	color: #fff;
 	text-shadow: 0 1px 2px rgba(0,0,0,.35);
-	padding: 50px 0 60px 0;
+	padding: 50px 2em 60px 2em;
+
 	background-color: #262626;
 	position: relative;
 	-webkit-font-smoothing: antialiased;
@@ -587,8 +588,12 @@ header h2 a:active {
 	left: 0;
 	right: 0;
 }
+.topcalltoaction h4 {
+	margin: 0;
+	line-height: 30px;
+}
 .topcalltoaction .row { width: 100%; max-width: 100%; margin: 0;}
-.topcalltoaction .row > * { float: right; margin: .5em 0; }
+.topcalltoaction .row > * { float: right; margin: .5em .5em; }
 .topcalltoaction .btn {
 	font-size: 14px;
 	line-height: 28px;
@@ -960,6 +965,29 @@ img {
 	color: #000;
 }
 
+.codebtn {
+	font-size: 38px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-outline-radius:5px;
+	background: #aaa center top no-repeat; 
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	padding: 0 1em;
+	overflow:hidden;
+	line-height: 167%;
+}
+
+.codeex {
+	margin-top: 1em;
+	display: block;
+}
+
+.like {
+	color: red;
+}
 /* blue button */
 .bluebtn2 {
 	-moz-border-radius: 5px;
