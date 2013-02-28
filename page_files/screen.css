@@ -107,7 +107,7 @@ hr {
 h1, h2, h3, h4, h5 {
 	font-weight: 100;
 	margin: 0 0 .6em 0;
-	color: #3c3c3c;
+	color: #666;
 }
 
 h1 {
@@ -222,6 +222,8 @@ header h2 a:hover, header h2 a:focus {
 	text-decoration:none;
 }
 
+
+
 header h2 a:active {
 	top: -2px;
 }
@@ -284,11 +286,16 @@ header h2 a:active {
 /*  Subheader ---------------------------------------------------------------- */
 
 #subheader {
-	color: #fff;
+	color: #333;
 	text-shadow: 0 1px 2px rgba(0,0,0,.35);
+<<<<<<< HEAD
 	padding: 50px 2em 60px 2em;
 
 	background-color: #262626;
+=======
+	padding: 50px 0 60px 0;
+	background-color: #fff;
+>>>>>>> design changes
 	position: relative;
 	-webkit-font-smoothing: antialiased;
 }
@@ -312,7 +319,7 @@ header h2 a:active {
 
 #subheader h1 {
 	font-size: 40px;
-	color: #fff;
+	color: #666;
 	line-height: 1em;
 	margin-bottom: .2em;
 }
@@ -367,25 +374,6 @@ header h2 a:active {
 	max-width: 100%;
 }
 
-#subheader .flexslider {
-	position: relative;
-	min-height: 500px;
-}
-
-#subheader .flexslider .flex-control-nav {
-	position: absolute;
-	width: 100%;
-	bottom: 25px;
-	left:0;
-	margin: 0;
-	z-index: 1000;
-}
-
-#subheader .flexslider :focus {
-	outline-color: rgb(101, 175, 255);
-  outline-color: rgba(101, 175, 255, 0.55);
-}
-
 #subheader .webstandards {
 	text-align: center;
 }
@@ -428,59 +416,108 @@ header h2 a:active {
 
 
 
+#subheader .row .logoContainer{
+		float: left;
+		height: auto;
+		clear: both;
+		width: auto;
+}
 
+
+#subheader .row .logo_img{
+		width: auto;
+		max-width: 50%;
+		height: auto;
+		margin: 0 auto;
+    
+        
 	
-	
-	
-	
-	#subheader .hiring {
-		font-size: 24px;
-		line-height:1em;
-		font-weight:200;
-		letter-spacing: -0.05em;
-		text-align:center;
-		overflow: hidden;
-		position:absolute;
-		top: 0;
-		left: 0;
-		width: 184px;
-		height: 184px;
-		z-index: 1;
-		display: block;
-	}
-  
-	#subheader .hiring a {
-		position: absolute;
-		top: 0;
-		left: 0;
-		background: url(../img/hiring2.png) bottom left no-repeat;
-		background-size: 100% auto;
-		width: 184px;
-		height: 184px;
-		overflow: hidden;
-		text-indent: -9999em;
-		display:block;
-	}
-	
-	#subheader .hiring a:hover,
-	#subheader .hiring a:focus {
-		background-position: top left;
-	}
+}
+
+#subheader .row .logo_headline{
+		width: auto;
+		height: auto;
+		text-align: center;
+		line-height: 1em;
+		min-width: 0;
+		word-wrap: break-word;
+		margin: 0 auto;
+}
+
+
   
 	
 /* Features -------------------------------------------------------------------- */
 
 
 .feature {
+	padding-top: 1em;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom:0;
+	background-color: #fff;
+	box-shadow: 0 0 10px #ddd;
+	/*border-bottom: 1px solid #eee;*/
+	margin-top:30px;
+	margin-bottom:30px;
+
+}
+
+
+.feature_blue {
 	padding-top: 4em;
 	padding-left: 32px;
 	padding-right: 32px;
 	padding-bottom:0;
-	background-color: rgba(250, 250, 250, 0.90);
+	background-color: #0B78C9;
 	border-bottom: 1px solid #eee;
 	margin-bottom:60px;
 
 }
+
+
+.feature_gray {
+	padding-top: 4em;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom:0;
+	background-color: #333333;
+	border-bottom: 1px solid #eee;
+	margin-bottom:60px;
+}
+
+
+.feature_red {
+	padding-top: 4em;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom:0;
+	background-color: #D34330;
+	border-bottom: 1px solid #eee;
+	margin-bottom:60px;
+}
+
+.feature_orange {
+	padding-top: 4em;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom:0;
+	background-color: #FF6300;
+	border-bottom: 1px solid #eee;
+	margin-bottom:60px;
+}
+
+
+.feature_yellow {
+	padding-top: 4em;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom:0;
+	background-color: #FFC200;
+	border-bottom: 1px solid #eee;
+	margin-bottom:60px;
+}
+
 
 .feature .row {
 	vertical-align: bottom;
@@ -577,8 +614,8 @@ header h2 a:active {
 .topcalltoaction {
 	text-align: center;
 	background-color: #fff;
-	border-bottom: 1px solid #e7e7e7;
-	box-shadow: 0 0 20px #262626;
+	border-bottom: 1px solid #eaeaea;
+	/*box-shadow: 0 0 10px #ddd;*/
 	position: relative;
 	z-index: 1;
 }
@@ -595,8 +632,7 @@ header h2 a:active {
 .topcalltoaction .row { width: 100%; max-width: 100%; margin: 0;}
 .topcalltoaction .row > * { float: right; margin: .5em .5em; }
 .topcalltoaction .btn {
-	font-size: 14px;
-	line-height: 28px;
+	line-height: 34px;
 	margin: 0;
 	min-width: 60%;
 }
@@ -868,13 +904,13 @@ img {
 }
 
 .btn {
-	border: solid 1px #d37300;
+	/*border: solid 1px #d37300;*/
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-	border-radius: 8px;
+	border-radius: 4px;
 	
 	background: #fdc900 center top no-repeat; 
-	
+	/*
 	background-image: -webkit-linear-gradient(bottom, #fe9f00, #fdc900);
 	background-image: -moz-linear-gradient(bottom, #fe9f00, #fdc900);
 	background-image: -o-linear-gradient(bottom, #fe9f00, #fdc900);
@@ -884,11 +920,11 @@ img {
 	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.35), inset 0 2px rgba(255,255,255,.27);
 	-moz-box-shadow: 0 2px 5px rgba(0,0,0,.35), inset 0 2px rgba(255,255,255,.27);
 	box-shadow: 0 2px 5px rgba(0,0,0,.35), inset 0 2px rgba(255,255,255,.27);
-
+*/
 	display: inline-block;
 	vertical-align: middle;
 	color: #fff;
-	font-size: 16px;
+	font-size: 20px;
 	text-shadow: 0 1px 2px rgba(0,0,0,.35);
 	line-height: 30px;
 	margin: -5px auto 30px auto;
@@ -1339,4 +1375,8 @@ img {
 	.r-table td:first-child img {
 		display: block !important;
 	}
+}
+
+colored_row{
+    
 }
