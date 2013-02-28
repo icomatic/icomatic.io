@@ -6,14 +6,7 @@
 <title>ICOMATIC</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale = 1.0">
 
-<!--[if lte IE 9]><link rel="stylesheet" href="/_/css/ie.css" type="text/css" media="screen" /><![endif]-->
-<!--[if lt IE 9]>	
-	<script src="/_/js/modernizr.custom.95873.js"></script>
-	<![endif]-->
-
 <link rel="stylesheet" href="./page_files/screen.css" type="text/css" media="screen">
-<script type="text/javascript" src="//use.typekit.net/vjx5zpq.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <script type="text/javascript" src="./page_files/css3-mediaqueries.js"></script>
 <script type="text/javascript">
 
@@ -30,23 +23,45 @@
   function likeFeature(name) {
     _gaq.push(['_trackEvent', 'Like', name]);
   }
+
+  var placeholder;
+  var sticky;
+  window.onload = function() {
+    placeholder = document.querySelector('.sticky-placeholder');
+    sticky = document.querySelector('.topcalltoaction');
+
+    window.onscroll = function(event) {
+      if (placeholder.offsetTop > window.pageYOffset) {
+        if (sticky.getAttribute('class') != 'topcalltoaction')
+          sticky.setAttribute('class', 'topcalltoaction');
+      } else if (sticky.getAttribute('class') != 'topcalltoaction stuck') {
+        sticky.setAttribute('class', 'topcalltoaction stuck');
+      }
+    }
+  }
 </script>
 </head>
 
 <body>
 <section id="subheader" role="region">
-  <div class="container">
-    <div class="herotitlecontainer">
-      <div class="herotitle"> 
-        <div class="herotitletext">
+  <div class="row">
+    <div class='sixcol'>
 			<h1>Icomatic</h1>
 			<p>
 				Create custom icon web fonts
 			</p>
-        </div>
-      </div>
-    </div></div>
+    </div>
+  </div>
 </section>
+
+<div class='sticky-placeholder'></div>
+
+<div class="topcalltoaction" role="region">
+  <div class="row">
+    <div class="twocol"><a href="signup.html" class="btn">Notify Me</a></div>
+    <div class="threecol"><h4>sign up for more info</h4></div>
+  </div>
+</div>
 
 <div class="feature" role="region">
   <div class="row">
@@ -74,7 +89,7 @@
     <div class="sixcol last feature_text">
       <h3>Spritesheet Export</h3>
       <p>If icon fonts are not the right solution for you, Icomatic can export a vector spritesheet with friendly CSS.</p>
-   <div class="threecol"><a href="" onClick="likeFeature('FontExport')" class="bluebtn2">I&nbsp;&#x2665;&nbsp;this&nbsp;feature</a></div>
+     <div class="threecol"><a href="" onClick="likeFeature('FontExport')" class="bluebtn2">I&nbsp;&#x2665;&nbsp;this&nbsp;feature</a></div>
 	   </div>
   </div>
 </div>
@@ -97,16 +112,6 @@
       <p>Who said icon fonts can only be a single color? We can help you with that.</p>
     <div class="threecol"><a href="" onClick="likeFeature('FontExport')" class="bluebtn2">I&nbsp;&#x2665;&nbsp;this&nbsp;feature</a></div>
 	  </div>
-  </div>
-</div>
-<div class="bottomcalltoaction" role="region">
-  <div class="row">
-    <div class="twocol empty"></div>
-    <div class="fivecol"> 
-      <p>Take the next step.</p>
-    </div>
-    <div class="threecol"><a href="signup.html" class="btn">Notify&nbsp;Me</a></div>
-    <div class="twocol empty last"></div>
   </div>
 </div>
 <!--
