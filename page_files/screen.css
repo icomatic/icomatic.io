@@ -583,6 +583,12 @@ header h2 a:active {
 	position: relative;
 	z-index: 1;
 }
+.topcalltoaction:after {
+	display: block;
+	height: 0;
+	clear: both;
+	content: ' ';
+}
 .topcalltoaction.stuck {
 	position: fixed;
 	top: 0;
@@ -594,7 +600,6 @@ header h2 a:active {
 
 .topcalltoaction.stuck .logo {
 	opacity: 1;
-	width: auto;
 }
 
 .topcalltoaction .logo, .topcalltoaction .signup {
@@ -606,7 +611,11 @@ header h2 a:active {
 }
 .topcalltoaction .logo {
 	opacity: 0;
-	width: 0;
+	-webkit-transition: opacity 200ms;
+	-moz-transition: opacity 200ms;
+	-ms-transition: opacity 200ms;
+	-o-transition: opacity 200ms;
+	transition: opacity 200ms;
 }
 .topcalltoaction .logo {
 	float: left;
