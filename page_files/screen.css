@@ -407,28 +407,15 @@ header h2 a:active {
 	float: left;
 }
 
-#subheader .row .logoContainer{
-		float: left;
-		height: auto;
-		clear: both;
-		width: auto;
-}
-
 #subheader .row .logo_img{
-		width: auto;
-		max-width: 50%;
-		height: auto;
-		margin: 0 auto;
+	max-width: 50%;
+	vertical-align: middle;
 }
 
 #subheader .row .logo_headline{
-		width: auto;
-		height: auto;
-		text-align: center;
-		line-height: 1em;
-		min-width: 0;
-		word-wrap: break-word;
-		margin: 0 auto;
+	text-align: left;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 /* Features -------------------------------------------------------------------- */
@@ -601,18 +588,31 @@ header h2 a:active {
 	top: 0;
 	left: 0;
 	right: 0;
-	background: url(images/icomatic_logo.svg) no-repeat, white;
 }
-.topcalltoaction h4 {
-	margin: 0;
-	line-height: 30px;
+
+.topcalltoaction .row { width: 100%; max-width: 100%; height: 34px; vertical-align: middle; margin: 0; padding: .2em;}
+
+.topcalltoaction.stuck .logo {
+	opacity: 1;
+	width: auto;
 }
-.topcalltoaction .row { width: 100%; max-width: 100%; margin: 0;}
-.topcalltoaction .row > * { float: right; margin: .5em .5em; }
-.topcalltoaction .btn {
-	line-height: 34px;
-	margin: 0;
-	min-width: 60%;
+
+.topcalltoaction .logo, .topcalltoaction .signup {
+	height: 100%;
+	display: inline-block;
+	vertical-align: text-top;
+	margin: 0 .2em;
+	line-height: 1.4;
+}
+.topcalltoaction .logo {
+	opacity: 0;
+	width: 0;
+}
+.topcalltoaction .logo {
+	float: left;
+}
+.topcalltoaction .signup {
+	float: right;
 }
 .topcalltoaction a {
 	/* color: #d37300; */
