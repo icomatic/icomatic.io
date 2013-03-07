@@ -47,6 +47,13 @@
 .like {
   color: red;
 }
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .crisp { content: url('./page_files/images/crisp_@2x.png'); }
+  .multicolor { content: url('./page_files/images/multicolor_@2x.png'); }
+  .serve { content: url('./page_files/images/serve_@2x.png'); }
+  .spritesheet { content: url('./page_files/images/spritesheet_@2x.png'); }
+}
 </style>
 </head>
 
@@ -92,7 +99,7 @@
 </div>
 <div class="feature" role="region">
   <div class="row">
-    <div class="sixcol right feature_image"><img src="./page_files/images/crisp.png" alt=""></div>
+    <div class="sixcol right feature_image"><img class='crisp' src="./page_files/images/crisp.png" alt=""></div>
     <div class="sixcol right first feature_text">
       <h3>Crisp vector icon fonts</h3>
       <p>Your custom font will be optimized for icons. It will look great on Retina and other high pixel density displays.</p>
@@ -102,7 +109,7 @@
 </div>
 <div class="feature" role="region">
   <div class="row">
-    <div class="sixcol feature_image"><img src="./page_files/images/spritesheet.png" alt=""></div>
+    <div class="sixcol feature_image"><img class='spritesheet' src="./page_files/images/spritesheet.png" alt=""></div>
     <div class="sixcol last feature_text">
       <h3>Spritesheet Export</h3>
       <p>If icon fonts are not the right solution for you, Icomatic can export a vector spritesheet with friendly CSS.</p>
@@ -112,7 +119,7 @@
 </div>
 <div class="feature" role="region">
   <div class="row">
-    <div class="sixcol right feature_image"><img src="./page_files/images/serve.png" alt=""></div>
+    <div class="sixcol right feature_image"><img class='serve' src="./page_files/images/serve.png" alt=""></div>
     <div class="sixcol right first feature_text">
       <h3>High performance icon font hosting</h3>
       <p>You can host your icon fonts, or we'll do it for you&mdash;your choice.</p>
@@ -123,7 +130,7 @@
 
 <div class="feature" role="region">
   <div class="row">
-    <div class="sixcol feature_image"><img src="./page_files/images/multicolor.png" alt=""></div>
+    <div class="sixcol feature_image"><img class='multicolor' src="./page_files/images/multicolor.png" alt=""></div>
     <div class="sixcol last feature_text">
       <h3>Multicolored Icons</h3>
       <p>Who said icon fonts can only be a single color? We can help you with that.</p>
