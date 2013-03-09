@@ -430,8 +430,8 @@ header h2 a:active {
 	/*border-bottom: 1px solid #eee;*/
 	margin-top:30px;
 	margin-bottom:30px;
-
 }
+
 
 .feature_blue {
 	padding-top: 4em;
@@ -439,8 +439,8 @@ header h2 a:active {
 	padding-right: 32px;
 	padding-bottom:0;
 	background-color: #0B78C9;
-	border-bottom: 1px solid #eee;
-	margin-bottom:60px;
+	/*border-bottom: 1px solid #eee;*/
+	/*margin-bottom:60px;*/
 
 }
 
@@ -600,15 +600,19 @@ header h2 a:active {
 
 .topcalltoaction.stuck .logo {
 	opacity: 1;
+    
 }
 
 .topcalltoaction .logo, .topcalltoaction .signup {
 	height: 100%;
 	display: inline-block;
 	vertical-align: text-top;
-	margin: 0 .2em;
+	margin: .4em .6em .4em 0;
 	line-height: 1.4;
 }
+
+
+
 .topcalltoaction .logo {
 	opacity: 0;
 	-webkit-transition: opacity 200ms;
