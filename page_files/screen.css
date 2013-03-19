@@ -284,11 +284,10 @@ header h2 a:active {
 /*  Subheader ---------------------------------------------------------------- */
 
 #subheader {
-	color: #333;
-	text-shadow: 0 1px 2px rgba(0,0,0,.35);
-	padding: 50px 2em 60px 2em;
-	background-color: #262626;
-	background-color: #fff;
+	color: #222;
+	padding: 2em 2em 1em 2em;
+	/*background-color: #000;*/
+    
 	position: relative;
 	-webkit-font-smoothing: antialiased;
 }
@@ -341,7 +340,8 @@ header h2 a:active {
 	font-size: 14px;
 	line-height: 28px;
 	height: 28px;
-	margin: 0;
+	margin-top: 15px;
+    
 }
 
 #subheader p {
@@ -421,15 +421,15 @@ header h2 a:active {
 /* Features -------------------------------------------------------------------- */
 
 .feature {
-	padding-top: 1em;
-	padding-left: 32px;
-	padding-right: 32px;
+	padding-top: 4em;
+	padding-left: 1em;
+	padding-right: 1em;
 	padding-bottom:0;
 	background-color: #fff;
-	box-shadow: 0 0 10px #ddd;
-	/*border-bottom: 1px solid #eee;*/
-	margin-top:30px;
-	margin-bottom:30px;
+	/*box-shadow: 0 0 10px #ddd;
+	border-bottom: 1px solid #eee;*/
+	/*margin-top:30px;
+	margin-bottom:30px;*/
 }
 
 
@@ -438,7 +438,7 @@ header h2 a:active {
 	padding-left: 32px;
 	padding-right: 32px;
 	padding-bottom:0;
-	background-color: #0B78C9;
+	background-color: #0fa9bb;
 	/*border-bottom: 1px solid #eee;*/
 	/*margin-bottom:60px;*/
 
@@ -578,8 +578,8 @@ header h2 a:active {
 
 .topcalltoaction {
 	text-align: center;
-	background-color: #fff;
-	border-bottom: 1px solid #eaeaea;
+	background-color: #000;
+	/*border-bottom: 1px solid #eaeaea;*/
 	position: relative;
 	z-index: 1;
 }
@@ -607,6 +607,7 @@ header h2 a:active {
 	height: 100%;
 	display: inline-block;
 	vertical-align: text-top;
+	color: #fff;
 	margin: .4em .6em .4em 0;
 	line-height: 1.4;
 }
@@ -900,7 +901,7 @@ img {
 	-moz-border-radius: 8px;
 	border-radius: 4px;
 	
-	background: #fdc900 center top no-repeat; 
+	background: #ff2e79 center top no-repeat; 
 	/*
 	background-image: -webkit-linear-gradient(bottom, #fe9f00, #fdc900);
 	background-image: -moz-linear-gradient(bottom, #fe9f00, #fdc900);
@@ -917,7 +918,7 @@ img {
 	color: #fff;
 	font-size: 20px;
 	text-shadow: 0 1px 2px rgba(0,0,0,.35);
-	line-height: 30px;
+	line-height:30px;
 	margin: -5px auto 30px auto;
 	padding: 0 1em;
 	overflow:hidden;
