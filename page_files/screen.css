@@ -1022,7 +1022,7 @@ img {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	-moz-outline-radius:5px;
-	background: #aaa center top no-repeat; 
+	background: #00abbb center top no-repeat; 
 	display: inline-block;
 	vertical-align: middle;
 	color: #fff;
@@ -1034,13 +1034,13 @@ img {
 
 
 .bluebtn2:hover, .bluebtn2:focus {
-	background: #999 center top no-repeat; 
+	background: #00abbb center top no-repeat; 
 	text-decoration:none;
 }
 
 
 .bluebtn2:active {
-	background: #fff center top no-repeat; 
+	background: #00abbb center top no-repeat; 
 	text-decoration:none;
 }
 
