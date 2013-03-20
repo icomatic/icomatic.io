@@ -434,11 +434,13 @@ header h2 a:active {
 
 
 .feature_blue {
-	padding-top: 4em;
+	padding-top: 2em;
 	padding-left: 32px;
 	padding-right: 32px;
-	padding-bottom:0;
+	padding-bottom:2em;
 	background-color: #0fa9bb;
+    color: #fff;
+    font-weight:600;
 	/*border-bottom: 1px solid #eee;*/
 	/*margin-bottom:60px;*/
 
