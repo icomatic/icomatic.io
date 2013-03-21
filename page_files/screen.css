@@ -80,7 +80,7 @@ em { font-style: oblique; }
 
 body {
   	font-family: "Source Sans Pro", "HelveticaNeue-light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 100;
+	font-weight: 500;
 	color: #686868; /* slightly darker shade than original #848484 achieves color contrast of 4.5:1 in body */
 	font-size: 16px;
 	line-height: 1.375em;
@@ -416,6 +416,7 @@ header h2 a:active {
 	text-align: left;
 	display: inline-block;
 	vertical-align: middle;
+    font-weight:600;
 }
 
 /* Features -------------------------------------------------------------------- */
