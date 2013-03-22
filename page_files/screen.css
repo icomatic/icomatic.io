@@ -6,7 +6,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
 
-a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; color=#00abbb; }
 
 html { overflow-y: scroll; }
 
@@ -643,14 +643,8 @@ header h2 a:active {
 	text-align: center;
 	padding-top: 4em;
 	padding-bottom: 1em;
-	
-	background-image: linear-gradient(bottom, #FFFFFF 27%, #f7f7f7 0%);
-	background-image: -o-linear-gradient(bottom, #FFFFFF 27%, #f7f7f7 0%);
-	background-image: -moz-linear-gradient(bottom, #FFFFFF 27%, #f7f7f7 0%);
-	background-image: -webkit-linear-gradient(bottom, #FFFFFF 27%, #f7f7f7 0%);
-	background-image: -ms-linear-gradient(bottom, #FFFFFF 27%, #f7f7f7 0%);
-	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.27, #FFFFFF),color-stop(0, #f7f7f7));
-	border-bottom: 1px solid #e7e7e7;
+	background-color:#000;
+    color:#eee;
 }
 
 .bottomcalltoaction a {
@@ -928,7 +922,7 @@ img {
 }
 
 .btn:hover, .btn:focus {
-	background: #fe9f00 center top no-repeat; 
+	background: #ee3a99 center top no-repeat; 
 	text-decoration:none;
 }
 
