@@ -1288,9 +1288,8 @@ img {
 		padding-right: inherit;
 	}
 	
-	.topcalltoaction .row, .bottomcalltoaction .row {
-		margin-left: 16px;
-		margin-right: 16px;
+	.topcalltoaction h4.signup {
+		display: none;
 	}
 	
 	.feature {
