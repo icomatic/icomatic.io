@@ -614,6 +614,9 @@ header h2 a:active {
 	line-height: 1.4;
 }
 
+.topcalltoaction img.logo {
+	width: auto;
+}
 
 
 .topcalltoaction .logo {
@@ -1009,9 +1012,6 @@ img {
 	display: block;
 }
 
-.like {
-	color: red;
-}
 /* blue button */
 .bluebtn2 {
 	-moz-border-radius: 5px;

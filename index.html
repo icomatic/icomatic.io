@@ -44,10 +44,20 @@
   }
 </script>
 <style>
-.like {
+.heart {
+  -webkit-transition-property: color, opacity;
+  -webkit-transition-duration: 0.5s;
+}
+
+.like .heart {
   color: red;
 }
 
+.like:after {
+  margin-left: 0.66em;
+  color: black;
+  content: 'Thank you!';
+}
 @media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   .logo_img { content: url('./page_files/images/logo_icomatic_@2x.png');}
   .export { content: url('./page_files/images/export_@2x.png');}
@@ -75,7 +85,7 @@
 
 <div class="topcalltoaction" role="region">
   <div class="row">
-    <object class='logo' data='page_files/images/icomatic_logo_small.png'></object>
+    <object class='logo' data='page_files/images/logo_icomatic_logo_small.png'></object>
     <h4 class='logo'>ICOMATIC</h4>
     <a href="signup.html" class="signup btn">Notify Me</a>
     <h4 class='signup'>sign&nbsp;up&nbsp;for&nbsp;more&nbsp;info</h4>
@@ -89,7 +99,7 @@
     <div class="fourcol right first feature_text">
       <h3>Use the power of modern web standards</h3>
       <p>Our icon fonts are semantic, so you can match each icon with a word, not a number or code. Easier for you to write, easier for search engines and screen readers to read.</p>
-    <div class="threecol"><a href="#" onClick="likeFeature('SemanticIcons', event)" class="bluebtn2">I&nbsp;<span id='SemanticIcons'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+    <div class="threecol" id='SemanticIcons'><a href="#" onClick="likeFeature('SemanticIcons', event)" class="bluebtn2">I&nbsp;<span class='heart'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
 	  </div>
   </div>
 </div>
@@ -99,7 +109,7 @@
     <div class="fourcol first feature_text">
       <h3>Crisp vector icon fonts</h3>
       <p>Your custom font will be optimized for icons. It will look great on Retina and other high pixel density displays.</p>
-    <div class="threecol"><a href="#" onClick="likeFeature('VectorIcons', event)" class="bluebtn2">I&nbsp;<span id='VectorIcons'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+    <div class="threecol" id='VectorIcons'><a href="#" onClick="likeFeature('VectorIcons', event)" class="bluebtn2">I&nbsp;<span class='heart'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
 	  </div>
   </div>
 </div>
@@ -110,7 +120,7 @@
     <div class="fourcol right last feature_text">
       <h3>Multicolored Icons</h3>
       <p>Who said icon fonts can only be a single color? We can help you with that.</p>
-    <div class="threecol"><a href="#" onClick="likeFeature('Multicolored', event)" class="bluebtn2">I&nbsp;<span id='Multicolored'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+    <div class="threecol" id='Multicolored'><a href="#" onClick="likeFeature('Multicolored', event)" class="bluebtn2">I&nbsp;<span class='heart'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
 	  </div>
   </div>
 </div>
@@ -121,7 +131,7 @@
     <div class="fourcol last feature_text">
       <h3>Spritesheet Export</h3>
       <p>If icon fonts are not the right solution for you, Icomatic can export a vector spritesheet with friendly CSS.</p>
-     <div class="threecol"><a href="#" onClick="likeFeature('SpritesheetExport', event)" class="bluebtn2">I&nbsp;<span id='SpritesheetExport'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+     <div class="threecol" id='SpritesheetExport'><a href="#" onClick="likeFeature('SpritesheetExport', event)" class="bluebtn2">I&nbsp;<span class='heart'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
 	   </div>
   </div>
 </div>
@@ -131,7 +141,7 @@
     <div class="fourcol right first feature_text">
       <h3>High performance icon font hosting</h3>
       <p>You can host your icon fonts, or we'll do it for you&mdash;your choice.</p>
-	  <div class="threecol"><a href="#" onClick="likeFeature('HighPerformance', event)" class="bluebtn2">I&nbsp;<span id='HighPerformance'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+	  <div class="threecol" id='HighPerformance'><a href="#" onClick="likeFeature('HighPerformance', event)" class="bluebtn2">I&nbsp;<span class='heart'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
 	  </div>
   </div>
 </div>
