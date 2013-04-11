@@ -616,6 +616,8 @@ header h2 a:active {
 
 .topcalltoaction img.logo {
 	width: auto;
+	height: auto;
+	margin-left: .4em;
 }
 
 
