@@ -408,7 +408,7 @@ header h2 a:active {
 }
 
 #subheader .row .logo_img{
-	max-width: 40%;
+	width: 40%;
 	vertical-align: middle;
 }
 
@@ -420,6 +420,10 @@ header h2 a:active {
 }
 
 /* Features -------------------------------------------------------------------- */
+
+.illustration {
+	max-width: 250px;
+}
 
 .feature {
 	padding-top: 3em;
