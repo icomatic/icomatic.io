@@ -408,7 +408,7 @@ header h2 a:active {
 }
 
 #subheader .row .logo_img{
-	max-width: 40%;
+	width: 40%;
 	vertical-align: middle;
 }
 
@@ -420,6 +420,10 @@ header h2 a:active {
 }
 
 /* Features -------------------------------------------------------------------- */
+
+.illustration {
+	max-width: 250px;
+}
 
 .feature {
 	padding-top: 3em;
@@ -614,6 +618,12 @@ header h2 a:active {
 	line-height: 1.4;
 }
 
+.topcalltoaction img.logo {
+	width: 25px;
+	height: auto;
+	margin-left: .4em;
+	margin-top: .7em;
+}
 
 
 .topcalltoaction .logo {
@@ -1009,9 +1019,6 @@ img {
 	display: block;
 }
 
-.like {
-	color: red;
-}
 /* blue button */
 .bluebtn2 {
 	-moz-border-radius: 5px;
