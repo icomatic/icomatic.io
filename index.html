@@ -27,6 +27,10 @@
     return false; // prevent scroll-back
   }
 
+  function track(event, name) {
+    _gaq.push(['_trackEvent', event, name]);
+  }
+
   var placeholder;
   var sticky;
   window.onload = function() {
@@ -121,7 +125,7 @@
     <div class="fourcol first feature_text">
       <h3>Try out a demo font</h3>
       <p>Download an icon font created with Icomatic. Want to see what it looks like in action? Check it out <a href="http://icomatic.github.io/sample-set/kit/icomatic.html">here</a>.</p>
-      <a href="https://github.com/icomatic/sample-set/archive/master.zip" class="bluebtn2">Download</a>
+      <a href="https://github.com/icomatic/sample-set/archive/master.zip" class="bluebtn2" onclick="track('SampleSet', 'Download')">Download</a>
     </div>
   </div>
 </div>
