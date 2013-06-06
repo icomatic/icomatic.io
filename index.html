@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <title>Icomatic</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale = 1.0">
-
+<link rel='icon' href='./page_files/images/favicon.png'>
 <link rel="stylesheet" href="./page_files/screen.css" type="text/css" media="screen">
 <script type="text/javascript" src="./page_files/css3-mediaqueries.js"></script>
 <script type="text/javascript">
@@ -44,10 +44,20 @@
   }
 </script>
 <style>
-.like {
+.heart {
+  -webkit-transition-property: color, opacity;
+  -webkit-transition-duration: 0.5s;
+}
+
+.like .heart {
   color: red;
 }
 
+.like:after {
+  margin-left: 0.66em;
+  color: black;
+  content: 'Thank you!';
+}
 @media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   .logo_img { content: url('./page_files/images/logo_icomatic_@2x.png');}
   .export { content: url('./page_files/images/export_@2x.png');}
@@ -55,7 +65,6 @@
   .multicolor { content: url('./page_files/images/multicolor_@2x.png'); }
   .serve { content: url('./page_files/images/serve_@2x.png'); }
   .spritesheet { content: url('./page_files/images/spritesheet_@2x.png'); }
-  .sampleset { content: url('./page_files/images/Icomatic_BasicSet_A_@2x.png');}
 }
 </style>
 </head>
@@ -63,7 +72,7 @@
 <body>
 <section id="subheader" role="region">
   <div class="row">
-    <img class='logo_img' src="./page_files/images/logo_icomatic.png" alt="logo">
+    <img class='logo_img illustration' src="./page_files/images/logo_icomatic.png" alt="logo">
     <div class="logo_headline">
 			<p>
 				Create custom icon web fonts
@@ -76,7 +85,7 @@
 
 <div class="topcalltoaction" role="region">
   <div class="row">
-    <object class='logo' data='page_files/images/icomatic_logo_small.png'></object>
+    <img class='logo' src='page_files/images/icomatic_logo_small.png' />
     <h4 class='logo'>ICOMATIC</h4>
     <a href="signup.html" class="signup btn">Notify Me</a>
     <h4 class='signup'>sign&nbsp;up&nbsp;for&nbsp;more&nbsp;info</h4>
@@ -86,67 +95,73 @@
 
 <div class="feature" role="region">
   <div class="row">
-    <div class="fourcol feature_image"><img class="sampleset" src="./page_files/images/Icomatic_BasicSet_A.png" alt=""></div>
-    <div class="threecol"><a href="#" onClick="likeFeature('SampleSet', event)" class="bluebtn2">I&nbsp;<span id="SampleSet">&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+    <div class="fourcol feature_image">
+      <img class="sampleset" src="./page_files/images/Icomatic_BasicSet_A.png" alt="">
+    </div>
+    <div class="fourcol first feature_text">
+      <h3>Try out a demo font</h3>
+      <p>Download an icon font created with Icomatic. Want to see what it looks like in action? Check it out <a href="http://icomatic.github.io/sample-set/kit/icomatic.html">here</a>.</p>
+      <a href="https://github.com/icomatic/sample-set/archive/master.zip" class="bluebtn2">Download</a>
+    </div>
   </div>
 </div>
 
 <div class="feature" role="region">
   <div class="row">
-    <div class="fourcol right feature_image"><img class='export' src="./page_files/images/export.png" alt=""></div>
+    <div class="fourcol right feature_image"><img class='export illustration' src="./page_files/images/export.png" alt=""></div>
     <div class="fourcol right first feature_text">
       <h3>Use the power of modern web standards</h3>
       <p>Our icon fonts are semantic, so you can match each icon with a word, not a number or code. Easier for you to write, easier for search engines and screen readers to read.</p>
-    <div class="threecol"><a href="#" onClick="likeFeature('SemanticIcons', event)" class="bluebtn2">I&nbsp;<span id='SemanticIcons'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+    <div class="threecol" id='SemanticIcons'><a href="#" onClick="likeFeature('SemanticIcons', event)" class="bluebtn2">I&nbsp;<span class='heart'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
 	  </div>
   </div>
 </div>
 <div class="feature" role="region">
   <div class="row">
-    <div class="fourcol feature_image"><img class='crisp' src="./page_files/images/crisp.png" alt=""></div>
+    <div class="fourcol feature_image"><img class='crisp illustration' src="./page_files/images/crisp.png" alt=""></div>
     <div class="fourcol first feature_text">
       <h3>Crisp vector icon fonts</h3>
       <p>Your custom font will be optimized for icons. It will look great on Retina and other high pixel density displays.</p>
-    <div class="threecol"><a href="#" onClick="likeFeature('VectorIcons', event)" class="bluebtn2">I&nbsp;<span id='VectorIcons'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+    <div class="threecol" id='VectorIcons'><a href="#" onClick="likeFeature('VectorIcons', event)" class="bluebtn2">I&nbsp;<span class='heart'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
 	  </div>
   </div>
 </div>
 
 <div class="feature" role="region">
   <div class="row">
-    <div class="fourcol right feature_image"><img class='multicolor' src="./page_files/images/multicolor.png" alt=""></div>
+    <div class="fourcol right feature_image"><img class='multicolor illustration' src="./page_files/images/multicolor.png" alt=""></div>
     <div class="fourcol right last feature_text">
       <h3>Multicolored Icons</h3>
       <p>Who said icon fonts can only be a single color? We can help you with that.</p>
-    <div class="threecol"><a href="#" onClick="likeFeature('Multicolored', event)" class="bluebtn2">I&nbsp;<span id='Multicolored'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+    <div class="threecol" id='Multicolored'><a href="#" onClick="likeFeature('Multicolored', event)" class="bluebtn2">I&nbsp;<span class='heart'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
 	  </div>
   </div>
 </div>
 
 <div class="feature" role="region">
   <div class="row">
-    <div class="fourcol feature_image"><img class='spritesheet' src="./page_files/images/spritesheet.png" alt=""></div>
+    <div class="fourcol feature_image"><img class='spritesheet illustration' src="./page_files/images/spritesheet.png" alt=""></div>
     <div class="fourcol last feature_text">
       <h3>Spritesheet Export</h3>
       <p>If icon fonts are not the right solution for you, Icomatic can export a vector spritesheet with friendly CSS.</p>
-     <div class="threecol"><a href="#" onClick="likeFeature('SpritesheetExport', event)" class="bluebtn2">I&nbsp;<span id='SpritesheetExport'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+     <div class="threecol" id='SpritesheetExport'><a href="#" onClick="likeFeature('SpritesheetExport', event)" class="bluebtn2">I&nbsp;<span class='heart'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
 	   </div>
   </div>
 </div>
 <div class="feature" role="region">
   <div class="row">
-    <div class="fourcol right feature_image"><img class='serve' src="./page_files/images/serve.png" alt=""></div>
+    <div class="fourcol right feature_image"><img class='serve illustration' src="./page_files/images/serve.png" alt=""></div>
     <div class="fourcol right first feature_text">
       <h3>High performance icon font hosting</h3>
       <p>You can host your icon fonts, or we'll do it for you&mdash;your choice.</p>
-	  <div class="threecol"><a href="#" onClick="likeFeature('HighPerformance', event)" class="bluebtn2">I&nbsp;<span id='HighPerformance'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
+	  <div class="threecol" id='HighPerformance'><a href="#" onClick="likeFeature('HighPerformance', event)" class="bluebtn2">I&nbsp;<span class='heart'>&#x2665;</span>&nbsp;this&nbsp;feature</a></div>
 	  </div>
   </div>
 </div>
 
 
 <footer class="feature_blue">
-  <p>© Copyright 2013 Icomatic. All rights Reserved. <a href="https://twitter.com/icomatic">@icomatic</a> </p>
+  <p>© Copyright 2013 Icomatic. All rights Reserved. <img src='page_files/images/twitter.svg' style='margin:0;vertical-align:text-bottom'/> <a href="https://twitter.com/icomatic">icomatic</a> </p>
 </footer>
 
 </body>
