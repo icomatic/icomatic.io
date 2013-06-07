@@ -69,6 +69,8 @@
   .multicolor { content: url('./page_files/images/multicolor_@2x.png'); }
   .serve { content: url('./page_files/images/serve_@2x.png'); }
   .spritesheet { content: url('./page_files/images/spritesheet_@2x.png'); }
+  .sampleset { content: url('./page_files/images/Icomatic_BasicSet_A@2x.png'); }
+  .sampleset.transparent { content: url('./page_files/images/Icomatic_BasicSet@2x.png'); }
 }
 
 .lightbox-container {
@@ -89,6 +91,16 @@
   padding: 50px;
   max-width: 100%;
   max-height: 100%;
+}
+.download {
+  background-color: #00a8be;
+  color: white;
+}
+.download a {
+  color: white;
+}
+.download a:hover {
+  color: #fbed00;
 }
 </style>
 </head>
@@ -117,15 +129,14 @@
   </div>
 </div>
 
-<div class="feature" role="region">
+<div class="feature download" role="region">
   <div class="row">
     <div class="fourcol feature_image">
-      <a href='#lightbox'><img class="sampleset" src="./page_files/images/Icomatic_BasicSet_A.png" alt=""></a>
+      <a href='#lightbox'><img class="sampleset transparent" src="./page_files/images/Icomatic_BasicSet.png" alt=""></a>
     </div>
     <div class="fourcol first feature_text">
-      <h3>Try out a demo font</h3>
+      <h3><a href='https://github.com/icomatic/sample-set/archive/master.zip' onclick="track('SampleSet', 'Download')">Try out a demo font</a></h3>
       <p>Download an icon font created with Icomatic. Want to see what it looks like in action? Check it out <a href="http://icomatic.github.io/sample-set/kit/icomatic.html">here</a>.</p>
-      <a href="https://github.com/icomatic/sample-set/archive/master.zip" class="bluebtn2" onclick="track('SampleSet', 'Download')">Download</a>
     </div>
   </div>
 </div>
