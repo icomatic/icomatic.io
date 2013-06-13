@@ -96,11 +96,19 @@
   background-color: #00a8be;
   color: white;
 }
-.download a {
+.download a, .download h3 {
   color: white;
 }
 .download a:hover {
   color: #fbed00;
+}
+.download .bluebtn2 {
+  background-color: white;
+  color: #00a8be;
+}
+.download a.bluebtn2:hover {
+  background-color: rgba(255, 255, 255, .8);
+  color: #00a8be;
 }
 </style>
 </head>
@@ -123,8 +131,8 @@
   <div class="row">
     <img class='logo' src='page_files/images/icomatic_logo_small.png' />
     <h4 class='logo'>ICOMATIC</h4>
-    <a href="signup.html" class="signup btn">Notify Me</a>
-    <h4 class='signup'>sign&nbsp;up&nbsp;for&nbsp;more&nbsp;info</h4>
+    <a href="signup.html" class="signup btn">Sign Up!</a>
+    <h4 class='signup'>register&nbsp;now&nbsp;to&nbsp;get&nbsp;started</h4>
     </div>
   </div>
 </div>
@@ -135,8 +143,9 @@
       <a href='#lightbox'><img class="sampleset transparent" src="./page_files/images/Icomatic_BasicSet.png" alt=""></a>
     </div>
     <div class="fourcol first feature_text">
-      <h3><a href='https://github.com/icomatic/sample-set/archive/master.zip' onclick="track('SampleSet', 'Download')">Try out a demo font</a></h3>
+      <h3>Try Our Sample Icon Font</h3>
       <p>Download an icon font created with Icomatic. Want to see what it looks like in action? Check it out <a href="http://icomatic.github.io/sample-set/kit/icomatic.html">here</a>.</p>
+      <div class="threecol"><a href='https://github.com/icomatic/sample-set/archive/master.zip' onclick="track('SampleSet', 'Download')" class='bluebtn2'>Download</a></div>
     </div>
   </div>
 </div>
