@@ -1,0 +1,44 @@
+---
+layout: simple
+title: FAQ
+faqs:
+ -
+  question: Are there any limitations on ligature names? (Why aren't my ligatures substituting correctly?)
+  anchor: ligature-names
+  answer: Yes. Right now, it's best to keep limit ligature names to letters and numbers. In particular, punctuation marks (dash, underscore, space, etc) will not work, but there are probably many other characters as well.
+ -
+  question: Are there any limitations on imported artwork? (I imported my artwork, but it doesn't show up. What gives?)
+  anchor: svg-artwork
+  answer: There are artwork limitations. You can only use svg polygon or path elements, and we do not yet support transforms. If you're artwork isn't showing up, try removing group (g) elements prior to import.
+ -
+  question: My icons include ligature names that seem to be conflicting. What can I do about that?
+  anchor: ligature-substitution
+  answer: If you are seeing a different ligature substitution that is also valid, and it is a question for priority. For example, if you have a ligature for "arrow" and "arrowright", then type in "arrowright", you could substitute for either "arrow", and have "right" unsubstituted, or substitute for the entire "arrowright" string. In general, it's best to limit the number of such naming conflicts in your font. Eventually, you will be able to prioritize which ligature substitutions to use, but we're not quite there yet.
+ -
+  question: Why does the size and color control occasionally disappear when I am using the sample page that comes with my custom icon font?
+  anchor: dat-h
+  answer: In the Preview page, 'H' toggles the visibility of the control that allows changing the color and size of your icon font preview. You can type 'H' again to toggle visibility.
+ -
+  question: I would like to modify my icon font, how can I do that?
+  anchor: font-modification
+  answer: Currently, you cannot modify an existing font created with Icomatic, so please keep hold of your original SVG files. If you want to modify a font, you will have to restart the font creation process by reuploading your SVG files.
+ -
+  question: The application gets stuck or crashes. What's up with that?
+  anchor: prototype
+  answer: Development on Icomatic is still very early. If you run into a bug, please let us know at icomatic [at] gmail.com, and we will try to get it fixed as soon as possible.
+style: |
+ .question {
+  font-weight: bold;
+ }
+---
+<h1>Icomatic FAQ</h1>
+<ul>
+{% for faq in page.faqs %}
+    <li><a href='#{{ faq.anchor }}'>{{ faq.question }}</a></li>
+{% endfor %}
+</ul>
+
+{% for faq in page.faqs %}
+<p id='{{ faq.anchor }}' class='question'>{{ faq.question }}</p>
+<p class='answer'>{{ faq.answer }}</p>
+{% endfor %}
