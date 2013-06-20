@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=9'>
+    <title>{{ page.title }}</title>
+    <meta name='viewport' content='width=device-width, user-scalable=no, maximum-scale=1.0'>
+    <link rel='icon' href='./page_files/images/favicon.png'>
+    <link rel='stylesheet' href='./page_files/screen.css' type='text/css' media='screen'>
+    <script src='./page_files/css3-mediaqueries.js'></script>
+    {% for include in page.includes %}
+        {% capture extension %}{{ include | split '.' | last | downcase }}{% endcapture %}
+        {% if extension == 'js' %}
+            <script src='{{ include }}'></script>
+        {% else %}
+            <link rel='stylesheet' href='{{ include }}' type='text/css' />
+        {% endif %}
+    {% endfor %}
+</head>
+<body>
+</body>
+</html>
