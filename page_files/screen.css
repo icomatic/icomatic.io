@@ -805,6 +805,25 @@ header h2 a:active {
 	text-align: center;	 	
 }
 
+.blue {
+	background-color: #00a8be;
+	color: white;
+}
+.blue h3 {
+	color: white;
+}
+.blue a {
+	color: #fbed00;
+}
+.blue .bluebtn2 {
+	background-color: white;
+	color: #00a8be;
+}
+.blue a.bluebtn2:hover {
+	background-color: rgba(255, 255, 255, .8);
+	color: #00a8be;
+}
+
 footer {
 	padding: 30px 12px 12px 12px;
 	font-size: 14px;

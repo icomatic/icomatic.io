@@ -17,6 +17,7 @@ body {
     margin: 0;
 }
 .container {
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 2em;
     margin-bottom: -2em;

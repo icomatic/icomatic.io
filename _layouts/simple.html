@@ -9,7 +9,7 @@
     <link rel='stylesheet' type='text/css' href='resources/css/simple.css'>
     <script src='resources/js/analytics.js'></script>
     {% for include in page.includes %}
-        {% capture extension %}{{ include | split '.' | last | downcase }}{% endcapture %}
+        {% capture extension %}{{ split include '.' | last | downcase }}{% endcapture %}
         {% if extension == 'js' %}
             <script src='{{ include }}'></script>
         {% else %}
