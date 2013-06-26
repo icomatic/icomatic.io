@@ -601,7 +601,16 @@ header h2 a:active {
 	right: 0;
 }
 
-.topcalltoaction .row { width: 100%; max-width: 100%; height: 34px; vertical-align: middle; margin: 0; padding: .2em;}
+.topcalltoaction .row {
+	width: 100%;
+	max-width: 100%;
+	height: 40px;
+	vertical-align: middle;
+	margin: 0;
+	padding: .2em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
 
 .topcalltoaction.stuck .logo {
 	opacity: 1;
