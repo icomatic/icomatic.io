@@ -32,6 +32,13 @@ script: |
       }
     }
   }
+  function bugherd(d, t) {
+    var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    bh.type = 'text/javascript';
+    bh.src = '//www.bugherd.com/sidebarv2.js?apikey=lfawuicwzjgqhyi4me2l6q';
+    s.parentNode.insertBefore(bh, s);
+  }
+  bugherd(document, 'script');
 style: |
   .heart {
     -webkit-transition-property: color, opacity;
