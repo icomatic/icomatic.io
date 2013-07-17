@@ -8,33 +8,24 @@ style: |
   @media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   .logo_img { content: url('./page_files/images/logo_icomatic_@2x.png');}
   }
+  .illustration {
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+  }
+  @media screen and (max-width: 900px) {
+    .illustration { position: static; margin: 0 auto; }
+  }
 ---
-<section id="subheader" role="region">
-  <div class="row">
-    <img class='logo_img illustration' src="./page_files/images/logo_icomatic.png" alt="logo">
-    <div class="logo_headline">
-      <p>
-        Create custom icon web fonts
-      </p>
-    </div>
-  </div>
-</section>
-
-<div class="bottomcalltoaction" role="region">
-  <div class="row">
-    <div class="onecol empty"></div>
-    <div class="sixcol"> 
+<div class="signup-box" role="region">
+  <img class='logo_img illustration' src="./page_files/images/logo_icomatic.png" alt="logo">
+  <h2>Create Custom Icon Web Fonts</h2>
       <p>We’re in a private beta period now. Subscribe to get access.</p>
-    </div>
-    <div class="fourcol">
       
       <!-- begin mailchimp signup form -->
       <form action="http://gmail.us6.list-manage.com/subscribe/post?u=d265bbf4a5&amp;id=d7158655a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style='margin:5px;border:0'></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="bluebtn2">
       </form>
       <!-- end mailchimp signup form -->
-    </div>
-    <div class="onecol empty last"></div>
-  </div>
 </div>

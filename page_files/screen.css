@@ -107,6 +107,7 @@ hr {
 h1, h2, h3, h4, h5 {
 	font-weight: 400;
 	margin: 0 0 .6em 0;
+	line-height: 1;
 	color: #222;
 }
 
@@ -120,7 +121,6 @@ h2 {
 
 h3 {
 	font-size: 30px;
-	line-height: 30px;
 }
 
 h4 {
@@ -633,6 +633,38 @@ header h2 a:active {
 	margin-top: .7em;
 }
 
+.signup-box {
+	max-width: 400px;
+	margin: 6em auto 1em auto;
+	border: 2px solid rgb(233, 233, 233);
+	border-radius: .5em;
+	background: #fff;
+	padding: 2em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.signup-box p, .signup-box form {
+	padding: 0 3.5em;
+	margin: 1em auto;
+}
+
+.signup-box input {
+	height: 2em;
+	width: 100%;
+	border-radius: 5px;
+	outline: 0;
+	border: 0;
+	margin: .2em 0;
+	box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+	display: block;
+}
+
+.signup-box input[type='email'] {
+	padding: .25em .5em;
+	font-size: 1.2em;
+	box-sizing: border-box;
+}
 
 .topcalltoaction .logo {
 	opacity: 0;
