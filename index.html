@@ -31,6 +31,8 @@ script: |
         sticky.setAttribute('class', 'topcalltoaction stuck');
       }
     }
+
+    IcomaticUtils.run();
   }
   function bugherd(d, t) {
     var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -118,7 +120,7 @@ style: |
     <div class="fourcol first feature_text">
       <h3>Try our sample icon font</h3>
       <p>Download an icon font created with Icomatic, along with the source files. Want to see what the icons look like in action? <a href="http://icomatic.github.io/sample-set/kit/icomatic.html">Check them out here</a>.</p>
-      <div class="threecol"><a href='https://github.com/icomatic/sample-set/archive/master.zip' onclick="track('SampleSet', 'Download')" class='bluebtn2'>Download</a></div>
+      <div class="threecol"><a href='https://github.com/icomatic/sample-set/archive/master.zip' onclick="track('SampleSet', 'Download')" class='bluebtn2'><span class='icomatic'>download</span>Download</a></div>
     </div>
   </div>
 </div>

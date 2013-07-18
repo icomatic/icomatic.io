@@ -7,6 +7,9 @@
     <meta name='viewport' content='width=device-width, user-scalable=no, maximum-scale=1.0'>
     <link rel='icon' href='./page_files/images/favicon.png'>
     <link rel='stylesheet' type='text/css' href='resources/css/default.css'>
+    <link rel='stylesheet' type='text/css' href='resources/fontkit/icomatic.css'>
+    <script src='resources/fontkit/icomatic.js'></script>
+    <script>window.onload = function() { IcomaticUtils.run(); }</script>
     <script src='resources/js/analytics.js'></script>
     {% for include in page.includes %}
         {% capture extension %}{{ split include '.' | last | downcase }}{% endcapture %}
@@ -35,7 +38,7 @@
         <a href="/">icomatic.io</a> |
         <a href="/faq.html">FAQ</a> |
         <a href="/privacy.html">Privacy Policy</a> |
-        <img src="./page_files/images/twitter.svg" style="margin:0;vertical-align:text-bottom">
+        <span class='icomatic'>twitter</span>
         <a href="https://twitter.com/icomatic">icomatic</a> |
         &copy; Copyright 2013 Icomatic. All rights Reserved.
     </div>
