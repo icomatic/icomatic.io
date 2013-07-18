@@ -6,7 +6,20 @@ includes:
  - page_files/css3-mediaqueries.js
 style: |
   @media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  .logo_img { content: url('./page_files/images/logo_icomatic_@2x.png');}
+  .logo-container::before { background-image: url('./page_files/images/logo_icomatic_@2x.png');}
+  }
+  .logo-container {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding-top: 2em;
+  }
+  .logo-container::before {
+    display: block;
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 250px;
+    content: ' ';
+    background: url('./page_files/images/logo_icomatic.png') top left no-repeat;
   }
   .illustration {
     display: block;
@@ -14,11 +27,12 @@ style: |
     top: 0; left: 0;
   }
   @media screen and (max-width: 900px) {
-    .illustration { position: static; margin: 0 auto; }
+    .logo-container { position: static; padding: 0; }
+    .logo-container::before { width: 250px; }
   }
 ---
 <div class="signup-box" role="region">
-  <img class='logo_img illustration' src="./page_files/images/logo_icomatic.png" alt="logo">
+  <div class='logo-container'></div>
   <h2>Create Custom Icon Web Fonts</h2>
       <p>We’re in a private beta period now. Subscribe to get access.</p>
       
