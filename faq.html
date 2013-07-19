@@ -3,6 +3,51 @@ layout: simple
 title: FAQ
 faqs:
  -
+  question: What kind of browser support do Icomatic fonts have?
+  anchor: browser-support
+  answer: |
+    It (of course) varies by browser. Using ligatures (or, icon names like 'alert' rather than just a character 'a') works in most modern browsers. In addition, you can use the included JavaScript fallback to achieve compatability with older browsers. The below table should provide some background.
+    <table class='browser-support'>
+      <tr>
+        <th></th>
+        <th>C</th>
+        <th>S</th>
+        <th>FF</th>
+        <th>IE</th>
+        <th>O</th>
+        <th>iOS</th>
+        <th>A</th>
+      </tr>
+      <tr>
+        <td>Ligatures</td>
+        <td>11+</td>
+        <td>5+</td>
+        <td>3.5+</td>
+        <td>10+</td>
+        <td>15+</td>
+        <td>4.2+</td>
+        <td>3+</td>
+      </tr>
+      <tr>
+        <td>with JS</td>
+        <td>1+</td>
+        <td>2+</td>
+        <td>3.5+</td>
+        <td>7+</td>
+        <td>10.5+</td>
+        <td>3.2+</td>
+        <td>1+</td>
+      </tr>
+    </table>
+    <p>To use an icon, simply apply the generic icomatic class to the element wrapping the icon name. In this example, the word 'alert' will show as an alert icon:</p>
+    <code class='block'>&lt;i class='icomatic'&gt;alert&lt;/i&gt;</code>
+    <p>To use the JavaScript fallback, include the following script in your html's <code>&lt;head&gt;</code> section:</p>
+    <code class='block'>
+      &lt;script src='icomatic.js'&gt;&lt;/script&gt;
+      &lt;script&gt;window.onload = function() { IcomaticUtils.run(); }&lt;/script&gt;
+    </code>
+    <p>To see an example of icon use, including the JavaScript fallback, check out the sample html file in your downloaded kit.</p>
+ -
   question: Are there any limitations on ligature names? (Why aren't my ligatures substituting correctly?)
   anchor: ligature-names
   answer: Yes. Right now, it's best to keep limit ligature names to letters and numbers. In particular, punctuation marks (dash, underscore, space, etc) will not work, but there are probably many other characters as well.
@@ -35,9 +80,19 @@ faqs:
   anchor: desktop-use
   answer: Yes, you can use the .eot and .ttf fonts as you would any other system font. Just make sure your program enables ligatures.
 style: |
- .question {
-  font-weight: bold;
- }
+  .question {
+    font-weight: bold;
+  }
+  th { font-size: 1.2em; }
+  td {
+    padding: .5em 1em;
+    border-right: 1px solid rgb(233, 233, 233);
+    border-bottom: 1px solid rgb(233, 233, 233);
+  }
+  tr:last-child td { border-bottom: none; }
+  td:last-child { border-right: none; }
+  table { margin: auto; border-collapse: collapse; }
+  .block { display: block; }
 ---
 <h1>Icomatic FAQ</h1>
 <ul>
